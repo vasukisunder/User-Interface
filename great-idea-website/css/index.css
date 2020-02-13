@@ -18,11 +18,12 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -48,9 +49,7 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
+
 
 html, body {
     height: 100%;
@@ -64,3 +63,126 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+*{
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+	max-width:100%; 
+  }
+
+body {
+	width: 90%;
+	margin: 0 auto; 
+}
+
+header{
+	width: 100%;
+	top: 0;
+	position: fixed;
+
+}
+
+header nav{
+	display: inline-block;
+	width: 75%;
+	color: white;
+	vertical-align: 15px;
+	background-color: #020b47;
+	padding: 1%;
+}
+
+header nav div{
+	display: inline-block;
+	width: 16%;
+	margin: 0 auto;
+}
+
+header .logo{
+display: inline-block;
+width: 15%;
+}
+
+p, address{
+	line-height: 30px;
+	font-family: 'Roboto', sans-serif;
+}
+.first{
+	vertical-align: middle;
+
+}
+
+.first #left{
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	margin-left: 1%;
+
+
+}
+.first #left h1{
+	display: inline-block;
+	width: 100%;
+	font-size: 60px;
+
+}
+
+
+.first p{
+	font-size: 20px;
+	border: 1px solid black;
+	display: inline-block;
+	width: 35%;
+margin: 0 auto;
+padding: 1% 6%;
+vertical-align: 120px;
+}
+
+.first p:hover{
+	animation-name:start;
+   animation-duration:0.8s;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+  
+}
+
+@keyframes start{
+  0% {background-color: white;}
+  50% {background-color: #bac9ff;}
+  100% {background-color: #3a4a85;}
+}
+
+
+.first img{
+	display: inline-block;
+	width: 45%;
+	margin-left: 3%;
+	padding: 5%;
+}
+
+.second #features, #about{
+	display: inline-block;
+	width: 49%;
+	padding: 3% 1%;
+	margin-left: 5px;
+
+}
+
+.second .middle-img{
+	width: 100%;
+}
+
+.second #services, #product, #vision{
+	display: inline-block;
+	width: 33%;
+	padding: 3% 1%;
+
+}
+
+footer{
+	padding: 3% 1%; 
+}
+
+footer p {
+	text-align: center;
+}
